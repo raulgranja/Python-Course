@@ -1,0 +1,17 @@
+print('\033[31m VERMELHO       \033[m')
+print('\033[32m VERDE          \033[m')
+print('\033[33m AMARELO        \033[m')
+print('\033[34m AZUL ESCURO    \033[m')             LETRAS
+print('\033[35m VIOLETA        \033[m')
+print('\033[36m AZUL CLARO     \033[m')
+print('\033[37m CINZA          \033[m')
+
+
+
+print('\033[41m VERMELHO       \033[m')
+print('\033[42m VERDE          \033[m')
+print('\033[43m AMARELO        \033[m')
+print('\033[44m AZUL ESCURO    \033[m')             FUNDOS
+print('\033[45m VIOLETA        \033[m')
+print('\033[46m AZUL CLARO     \033[m')
+print('\033[47m CINZA          \033[m')

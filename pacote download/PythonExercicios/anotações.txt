@@ -1,0 +1,81 @@
+====== Dicionário ======
+Concatenação --> Junção entre strings.
+= --> Recebe
+''' --> Faz com que uma função reconheça uma quebra de linha
+
+====== Funções ======
+pow(n1, n2) --> n1**n2.
+print() --> Retorna um valor na tela.
+input() --> Lê um valor que será escrito quando o programa for rodado.
+int() --> A variável é lida como um tipo primitivo inteiro.
+
+====== Métodos ======
+.format(VARIÁVEL)
+   --> Pode ser colocado depois do print para inserir a variável dentro do 'string' a partir de {}.
+      --> Nesse caso também pode-se escrever: print(f'{VARIÁVEL:.2f}).
+   --> {:20} A variável aparece em 20 caracteres.
+   --> {:>20} A variável aparece em 20 caracteres com alinhamento à direita.
+   --> {:<20} A variável aparece em 20 caracteres com alinhamento à esquerda.
+   --> {:^20} A variável aparece em 20 caracteres centralizado.
+   --> {:=^20} A variável aparece em 20 caracteres centralizado e com sinais de '=' completando os espaços.
+   --> {:.xf} A variável aparece com x casas decimais float.
+
+\n --> Quebra de linha
+end='OBJETO' --> Impede a quebra de linha e adiciona o objeto entre a atual linha e a próxima
+
+====== Operadores aritméticos ======
+(==) Igualdade
+(!=) Diferente
+(+) Soma
+(-) Subtração
+(*) Multiplicação
+(/) Divisão
+(**) Exponencial
+(//) Divisão com resultado de tipo primitivo int
+(%) Resto da divisão (módulo)
+
+====== Ordem de precedência ======
+1) ()
+2) **
+3) *, /, //, %
+4) +, -
+
+====== Fatiamento ======
+frase = 'Curso em Vídeo Python'
+C u r s o   e m   V í  d  e  o     P  y  t  h  o  n
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+Leve em conta que os códigos abaixo estão em print.
+frase[9] --> Vai identificar dentro da cadeia de caracteres qual corresponde ao 9, que no caso é o 'V';
+frase[9:13] --> Vai mostrar do caracter 9 até o 12 (Víde);
+frase[9:21] --> Vai mostrar do caracter 9 até o 20 (Vídeo Python);
+frase[9:21:2] --> Vai mostrar do caracter 9 até o 20 pulando 2 caracteres (VdoPto);
+frase[:5] --> Vai mostrar do caracter inicial até o 4 (Curso);
+frase[15:] --> Vai mostrar do caracter 15 até o final (Python);
+frase[9::3] --> Vai mostrar do caracter 9 até o final, pulando 3 caracteres (VePh);
+
+====== Análise ======
+len(frase) --> Mostra a quantidade de caracteres da frase;
+frase.count('o') --> Conta quantas letras 'o' minúsculas existem na frase;
+frase.count('o',0,13) --> Conta do 0 até o 12 quantas letras 'o' existem;
+frase.find('deo') --> Diz em que momento começou a sequência de letras 'deo' (11);
+frase.find('Android') --> Retornará o valor -1, pois 'Android' não pertence à frase;
+'Curso' in frase --> Retorna o valor True, pois há 'Curso' na frase.
+
+====== Transformação ======
+frase.replace('Python,'Android') --> Procura 'Python' e substitui por 'Android';
+frase.upper() --> Transforma todas as letras da frase para letras maiúsculas;
+frase.lower() --> Transforma todas as letras da frase para letras minúsculas;
+frase.capitalize() --> Todos os caracteres vão para minúsculos, mas o primeiro fica maiúscula;
+frase.title() --> A primeira letra de todas as palavras são transformadas em letras maiúsculas;
+    --> Upper, lower, capitalize e title são métodos, portanto, devem ser seguidos de parênteses.
+frase.strip() --> Remove os espaços 'inúteis' do começo e do fim da frase;
+frase.rstrip() --> Remove somente os espaços inúteis à direita da frase;
+frase.lstrip() --> Remove somente os espaços inúteis à esquerda da frase;
+    --> 'r' e 'l' são funcionalidades que podem ser utilizadas em algumas funções de Python, significam respectivamente right e left.
+
+====== Divisão ======
+frase.split() --> Separa cada palavra em uma divisão diferente, por exemplo:
+    --> C u r s o   e m   V í d e o   P y t h o n
+        0 1 2 3 4   0 1   0 1 2 3 4   0 1 2 3 4 5
+            0        1        2            3
+'-'.join(frase) --> Une todos os pedaços da frase, com um tracinho entre eles.
